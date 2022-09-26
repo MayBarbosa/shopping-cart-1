@@ -12,13 +12,14 @@ async def users_crud():
     option = input("Entre com a opção de CRUD: ")
     
     await connect_db()
+
     users_collection = db.users_collection
 
     user =  {
-        "email": "lu_domagalu@gmail.com",
-        "password": "213sd312re3",
+        "email": "teste2u@gmail.com",
+        "password": "00000045",
         "is_active": True,
-        "is_admin": False
+        "is_admin": True
     }
 
     if option == '1':
